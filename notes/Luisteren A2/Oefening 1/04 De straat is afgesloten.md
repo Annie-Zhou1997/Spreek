@@ -37,25 +37,25 @@ Wanneer gaat de straat van Amina weer open?
 
 | 荷兰语 | 中文 | 原文例句 | 再来一句 |
 |---|---|---|---|
-| het buurthuis | 社区活动中心 | Amina is in het buurthuis. | In het buurthuis is elke woensdag een taalles. |
-| de buren | 邻居们（复数） | De buren van Amina praten met elkaar. | Onze buren zijn heel vriendelijk. |
-| met elkaar | 互相，一起 | De buren praten met elkaar. | We eten vaak met elkaar. |
-| onhandig | 不方便的；笨拙的 | Het is wel onhandig dat onze straat is afgesloten. | Het is onhandig dat de winkel zondag dicht is. |
-| afgesloten | 封闭的（afsluiten 的过去分词） | Onze straat is afgesloten. | De weg is afgesloten vanwege een ongeluk. |
-| de weg | 路 | Ze maken de weg weer helemaal mooi. | Deze weg gaat naar het centrum. |
-| het gat | 坑，洞 | Er zaten zoveel gaten in. | Er zit een gat in mijn sok. |
-| nog steeds | 仍然，还是 | Er komt nog steeds geen nieuwe verlichting. | Ik wacht nog steeds op antwoord. |
-| de verlichting | 照明，路灯 | Er komt nog steeds geen nieuwe verlichting. | De verlichting in de gang is kapot. |
-| niet eens | 甚至不，连……都不 | Ze maken niet eens nieuwe parkeerplaatsen. | Hij heeft niet eens gedag gezegd. |
-| de parkeerplaats | 停车位 | Ze maken niet eens nieuwe parkeerplaatsen. | Ik zoek een parkeerplaats bij het station. |
-| ik vind het maar niks | 我觉得不怎么样（口语） | Nou ja, ik vind het maar niks, hoor. | Dat nieuwe programma? Ik vind het maar niks. |
-| het gedoe | 麻烦事，折腾 | Al dat gedoe. | Verhuizen is altijd veel gedoe. |
-| gelukkig | 幸好 | Gelukkig is het maar tijdelijk. | Gelukkig regent het niet. |
-| tijdelijk | 暂时的 | Gelukkig is het maar tijdelijk. | Ik heb een tijdelijk contract. |
-| dicht blijven | 一直关着 | Die straat blijft dicht tot eind volgende maand. | De winkel blijft dicht in augustus. |
-| eind volgende maand | 下个月底 | Tot eind volgende maand. | Eind volgende maand ga ik op vakantie. |
-| duren | 持续（多久） | Dat duurt nog zes weken. | De les duurt een uur. |
-| repareren | 修理 | Om de weg te repareren. | Mijn fiets moet gerepareerd worden. |
+| het buurthuis | 社区活动中心 | Amina is in het buurthuis.<br>Amina 在社区活动中心。 | In het buurthuis is elke woensdag een taalles.<br>社区中心每周三有语言课。 |
+| de buren | 邻居们（复数） | De buren van Amina praten met elkaar.<br>Amina 的邻居们在聊天。 | Onze buren zijn heel vriendelijk.<br>我们的邻居很友好。 |
+| met elkaar | 互相，一起 | De buren praten met elkaar.<br>邻居们互相聊天。 | We eten vaak met elkaar.<br>我们常一起吃饭。 |
+| onhandig | 不方便的；笨拙的 | Het is wel onhandig dat onze straat is afgesloten.<br>我们的街封了，挺不方便的。 | Het is onhandig dat de winkel zondag dicht is.<br>商店周日关门，挺不方便。 |
+| afgesloten | 封闭的（afsluiten 的过去分词） | Onze straat is afgesloten.<br>我们的街封了。 | De weg is afgesloten vanwege een ongeluk.<br>因为事故路封了。 |
+| de weg | 路 | Ze maken de weg weer helemaal mooi.<br>他们把路重新修好。 | Deze weg gaat naar het centrum.<br>这条路通向市中心。 |
+| het gat | 坑，洞 | Er zaten zoveel gaten in.<br>路上有那么多坑。 | Er zit een gat in mijn sok.<br>我袜子上有个洞。 |
+| nog steeds | 仍然，还是 | Er komt nog steeds geen nieuwe verlichting.<br>还是没有新的路灯。 | Ik wacht nog steeds op antwoord.<br>我还在等回复。 |
+| de verlichting | 照明，路灯 | Er komt nog steeds geen nieuwe verlichting.<br>还是没有新的路灯。 | De verlichting in de gang is kapot.<br>走廊的灯坏了。 |
+| niet eens | 甚至不，连……都不 | Ze maken niet eens nieuwe parkeerplaatsen.<br>他们连新停车位都不弄。 | Hij heeft niet eens gedag gezegd.<br>他连再见都没说。 |
+| de parkeerplaats | 停车位 | Ze maken niet eens nieuwe parkeerplaatsen.<br>他们连新停车位都不弄。 | Ik zoek een parkeerplaats bij het station.<br>我在车站附近找停车位。 |
+| ik vind het maar niks | 我觉得不怎么样（口语） | Nou ja, ik vind het maar niks, hoor.<br>唉，我觉得不怎么样。 | Dat nieuwe programma? Ik vind het maar niks.<br>那个新节目？我觉得不怎么样。 |
+| het gedoe | 麻烦事，折腾 | Al dat gedoe.<br>这么多麻烦事。 | Verhuizen is altijd veel gedoe.<br>搬家总是很折腾。 |
+| gelukkig | 幸好 | Gelukkig is het maar tijdelijk.<br>好在只是暂时的。 | Gelukkig regent het niet.<br>幸好没下雨。 |
+| tijdelijk | 暂时的 | Gelukkig is het maar tijdelijk.<br>好在只是暂时的。 | Ik heb een tijdelijk contract.<br>我是临时合同。 |
+| dicht blijven | 一直关着 | Die straat blijft dicht tot eind volgende maand.<br>那条街要封到下月底。 | De winkel blijft dicht in augustus.<br>商店八月一直关门。 |
+| eind volgende maand | 下个月底 | Tot eind volgende maand.<br>到下个月底。 | Eind volgende maand ga ik op vakantie.<br>下月底我去度假。 |
+| duren | 持续（多久） | Dat duurt nog zes weken.<br>那还要六个星期。 | De les duurt een uur.<br>课上一个小时。 |
+| repareren | 修理 | Om de weg te repareren.<br>为了修路。 | Mijn fiets moet gerepareerd worden.<br>我的自行车得修。 |
 
 ## 语法点
 

@@ -30,9 +30,11 @@
 html,body{height:100%}
 body{background:var(--bg);color:var(--fg);font-family:var(--f-ui);font-size:15px;line-height:1.5;margin:0}
 .app{display:grid;grid-template-columns:1fr;height:100%;max-width:1100px;margin:0 auto}
-@media (min-width:760px){.app{grid-template-columns:280px 1fr}}
+@media (min-width:760px){.app{grid-template-columns:280px 1fr}.app.narrow{grid-template-columns:1fr}.app.narrow #p-list{display:none!important}#side{display:inline-grid}}
+#side{display:none}
 .pane{display:flex;flex-direction:column;min-width:0;min-height:0;height:100%}
 .pane[hidden]{display:none}
+@media (min-width:760px){#back{display:none}}
 @media (min-width:760px){.pane{display:flex!important}}
 
 .top{display:flex;align-items:center;gap:8px;padding-block:10px;padding-inline:16px;border-bottom:1px solid var(--line);background:var(--surface);flex-wrap:wrap;position:sticky;top:env(safe-area-inset-top,0px);z-index:2}
@@ -99,13 +101,15 @@ textarea:focus{outline:none}
 .field{display:flex;flex-direction:column;gap:4px;font-size:13px;color:var(--muted)}
 select,input{font:inherit;color:var(--fg);background:var(--bg);border:1px solid var(--line);border-radius:6px;padding:7px 9px;width:100%;box-sizing:border-box}
 .hint{font-size:13px;color:var(--muted)}
+label.chk{display:flex;align-items:center;gap:8px;font-size:14px;cursor:pointer}
+label.chk input{width:auto}
 .row{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
 .row > .field{flex:1 1 180px}
 .toast{position:fixed;left:50%;transform:translateX(-50%);top:calc(12px + env(safe-area-inset-top,0px));background:var(--fg);color:var(--bg);padding:8px 14px;border-radius:8px;font-size:14px;z-index:9;opacity:0;transition:opacity .2s;pointer-events:none}
 .toast.show{opacity:1}
 </style>
 
-<div class="app">
+<div class="app" id="app">
   <section class="pane" id="p-list">
     <div class="top">
       <h1>Spreek</h1>
@@ -120,6 +124,7 @@ select,input{font:inherit;color:var(--fg);background:var(--bg);border:1px solid 
   <section class="pane" id="p-note" hidden>
     <div class="top">
       <button class="btn ghost" id="back">← 列表</button>
+      <button class="btn ghost icon" id="side" title="收起 / 展开侧栏" aria-label="收起或展开侧栏"><svg viewBox="0 0 16 16"><path d="M1 3h14v1.5H1zM1 7.25h14v1.5H1zM1 11.5h14V13H1z"/></svg></button>
       <span style="flex:1"></span>
       <button class="btn" id="read-all" title="从头朗读整篇">▶ 全文</button>
       <a class="btn" id="gh" href="#" target="_blank" rel="noopener">在 GitHub 上编辑</a>
@@ -142,8 +147,9 @@ select,input{font:inherit;color:var(--fg);background:var(--bg);border:1px solid 
   <div>
     <div class="row" style="justify-content:space-between"><b>设置</b><button class="btn ghost" id="settings-close">关闭</button></div>
     <label class="field">语速<select id="rate"><option value="0.7">慢 0.7×</option><option value="0.85">较慢 0.85×</option><option value="1">正常 1×</option><option value="1.15">快 1.15×</option></select></label>
-    <label class="field">无法判断时当作<select id="deflang"><option value="nl">荷兰语</option><option value="en">英语</option><option value="de">德语</option><option value="fr">法语</option><option value="es">西班牙语</option></select></label>
-    <div class="hint">单个短词有时荷兰语和英语写法一样，这时按上面的语言读。</div>
+    <label class="field">正在学的语言<select id="study"><option value="nl">荷兰语</option><option value="de">德语</option><option value="fr">法语</option><option value="es">西班牙语</option><option value="ru">俄语</option><option value="en">英语</option></select></label>
+    <label class="chk"><input type="checkbox" id="detect-en"> 整句明显是英语时用英语声音读</label>
+    <div class="hint">其余一律按正在学的语言读，单个词不做判断。俄语按字母自动识别。</div>
     <div id="voice-fields"></div>
     <div class="hint" id="voice-hint"></div>
   </div>
@@ -186,45 +192,44 @@ async function bodyOf(n){
 /* ================= 语言判断 ================= */
 const NL = new Set("de het een en van ik je jij u wij we zij ze hij niet is zijn dat die dit op te met voor naar ook maar om bij als dan nog wel heb hebt heeft hebben kan kunt kunnen moet moeten wil wilt willen wordt worden ben bent was waren er hier daar wat wie hoe waar wanneer waarom veel meer geen alle mensen graag dag goed uur jaar week maand morgen vandaag gisteren mij me mijn jouw uw ons onze hun haar zich zo nu al over uit aan door tot bij per want omdat of dus toch even weer heel erg".split(" "));
 const EN = new Set("the and is are you to of in that it for with on this have be not as at by from they we or an will can your was were has had do does did but if so my me our their them he she his her what which who when where why how all more some any there here just about into than then now one two three new would could should may might".split(" "));
-function detect(text, fallback){
+// 规则：只区分「正在学的语言」和英语。斯拉夫字母一定是俄语；拉丁字母默认是学习语言，
+// 只有证据很强（至少三个词，而且英语特征明显多于学习语言）才判成英语。单个词永远按学习语言读。
+function detect(text){
+  const study=$("study").value;
+  if (/[\u0400-\u04ff]/.test(text)) return "ru";
+  if (study==="en" || !$("detect-en").checked) return study;
   const words = text.toLowerCase().match(/[a-zà-ÿœæß']+/g) || [];
-  if (!words.length) return fallback;
-  if (/[äöüß]/.test(text) && !/ij/.test(text)) return "de";
-  if (/[çàèùœ]|[éê].*\b(le|la|les|des|est|et|une)\b/.test(text)) return "fr";
-  if (/[ñ¿¡]|\b(el|los|las|es|una|por|que)\b.*\b(el|los|las|es|una|por|que)\b/.test(text)) return "es";
-  let nl=0, en=0;
+  if (words.length<3) return study;
+  let own=0, en=0;
   for (const w of words){
-    if (NL.has(w)) nl+=2; if (EN.has(w)) en+=2;
-    if (/ij|oe|ui|aa|ee|oo|sch|lijk$|heid$|tje$|en$/.test(w)) nl+=1;
-    if (/th|wh|ing$|tion$|ed$|ly$|ght/.test(w)) en+=1;
+    if (EN.has(w)) en+=2;
+    if (/th|wh|ing$|tion$|ly$|ght/.test(w)) en+=1;
+    if (study==="nl"){ if (NL.has(w)) own+=2; if (/ij|oe|ui|aa|ee|oo|sch|lijk$|heid$|tje$|en$/.test(w)) own+=1; }
   }
-  if (nl===en) return fallback;
-  return nl>en ? "nl" : "en";
-}
-function dominantLang(){
-  const t = [...$("reader").querySelectorAll(".say")].map(s=>s.textContent).join(" ");
-  const d = detect(t, null); return d || $("deflang").value;
+  return (en>=4 && en>own*1.5) ? "en" : study;
 }
 
 /* ================= 朗读 ================= */
 const synth = window.speechSynthesis;
 let voices=[];
-const LANGS = {nl:"荷兰语", en:"英语", de:"德语", fr:"法语", es:"西班牙语"};
+const LANGS = {nl:"荷兰语", en:"英语", de:"德语", fr:"法语", es:"西班牙语", ru:"俄语"};
+const SAMPLE = {nl:"Hallo, ik spreek Nederlands.", en:"Hello, I speak English.", de:"Hallo, ich spreche Deutsch.", fr:"Bonjour, je parle français.", es:"Hola, hablo español.", ru:"Привет, я говорю по-русски."};
 function rank(v){ const n=v.name.toLowerCase(); let r=0; if(/natural|online|neural/.test(n)) r+=10; if(/google/.test(n)) r+=8; if(/premium|enhanced|verbeterd/.test(n)) r+=5; return r; }
 function loadVoices(){
   if (!synth) return;
   voices = synth.getVoices().slice().sort((a,b)=>rank(b)-rank(a));
   const box=$("voice-fields"); box.innerHTML="";
-  for (const [code,name] of Object.entries(LANGS)){
+  const study=$("study").value;
+  for (const code of [...new Set([study,"en"])]){
+    const name=LANGS[code];
     const vs = voices.filter(v=>v.lang.toLowerCase().replace("_","-").startsWith(code));
-    if (!vs.length && code!=="nl" && code!=="en") continue;
     const sel=document.createElement("select"); sel.id="v-"+code;
     sel.innerHTML = vs.length ? vs.map(v=>`<option value="${v.name.replace(/"/g,"&quot;")}">${v.name.replace(/^Microsoft /,"")} (${v.lang})</option>`).join("") : `<option value="">（没有${name}声音）</option>`;
     const saved=ls.get("voice-"+code,null); if (saved && vs.some(v=>v.name===saved)) sel.value=saved;
-    sel.onchange=()=>{ ls.set("voice-"+code, sel.value); speakNow(code==="nl"?"Hallo, ik spreek Nederlands.":code==="en"?"Hello, I speak English.":"Hallo", code); };
+    sel.onchange=()=>{ ls.set("voice-"+code, sel.value); speakNow(SAMPLE[code]||"Hallo", code); };
     const lab=document.createElement("label"); lab.className="field"; lab.textContent=name+"声音"; lab.appendChild(sel); box.appendChild(lab);
   }
-  $("voice-hint").textContent = voices.some(v=>/^nl/i.test(v.lang)) ? "" : "没找到荷兰语声音。电脑用 Chrome 或 Edge；iPhone 在「设置 → 辅助功能 → 朗读内容 → 声音」里下载荷兰语。";
+  $("voice-hint").textContent = voices.some(v=>v.lang.toLowerCase().startsWith(study)) ? "" : `没找到${LANGS[study]}声音。电脑用 Chrome 或 Edge；iPhone 在「设置 → 辅助功能 → 朗读内容 → 声音」里下载${LANGS[study]}。`;
 }
 if (synth){ loadVoices(); synth.onvoiceschanged=loadVoices; setTimeout(loadVoices,800); }
 function voiceFor(code){
@@ -242,7 +247,7 @@ function setHot(els){ document.querySelectorAll(".say.hot").forEach(e=>e.classLi
 function speakNow(text, lang){
   if (!synth) return; synth.cancel(); runId++;
   const t=stripCJK(text); if(!t) return;
-  synth.speak(utter(t, lang || detect(t, $("deflang").value)));
+  synth.speak(utter(t, lang || detect(t)));
 }
 function speakAsync(text, lang, my){
   return new Promise(res=>{
@@ -301,8 +306,7 @@ function render(){
       const b=document.createElement("button"); b.className="bp"; b.innerHTML=playSvg; b.title="读这一段"; b.dataset.blk="1"; blk.prepend(b);
     }
   });
-  const dom=dominantLang();
-  chunks.forEach(c=>{ c.text=c.text.replace(/\s+/g," ").trim(); c.lang=detect(c.text, dom); });
+  chunks.forEach(c=>{ c.text=c.text.replace(/\s+/g," ").trim(); c.lang=detect(c.text); });
 }
 $("reader").addEventListener("click", async e=>{
   const bp=e.target.closest("[data-blk]");
@@ -387,9 +391,12 @@ $("settings-open").onclick=()=>$("sheet").hidden=false;
 $("settings-close").onclick=()=>$("sheet").hidden=true;
 $("sheet").onclick=e=>{ if(e.target===$("sheet")) $("sheet").hidden=true; };
 $("rate").value=ls.get("rate","0.85"); $("rate").onchange=()=>ls.set("rate",$("rate").value);
-$("deflang").value=ls.get("deflang","nl"); $("deflang").onchange=()=>{ ls.set("deflang",$("deflang").value); if(!$("reader").hidden) render(); };
+$("study").value=ls.get("study","nl"); $("study").onchange=()=>{ ls.set("study",$("study").value); loadVoices(); if(!$("reader").hidden) render(); };
+$("detect-en").checked=ls.get("detect-en",true); $("detect-en").onchange=()=>{ ls.set("detect-en",$("detect-en").checked); if(!$("reader").hidden) render(); };
 
 document.addEventListener("keydown", e=>{ if (e.key==="Escape") stopAll(); });
+$("side").onclick=()=>{ const n=$("app").classList.toggle("narrow"); ls.set("narrow",n); };
+if (ls.get("narrow",false)) $("app").classList.add("narrow");
 addEventListener("resize", ()=>{ if (innerWidth>=760){ $("p-list").hidden=false; $("p-note").hidden=false; } else if (!curId){ $("p-note").hidden=true; } });
 
 loadIndex();

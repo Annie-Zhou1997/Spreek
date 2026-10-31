@@ -24,24 +24,24 @@ Wil jij bij ons komen werken? Bel dan naar kantoor.
 
 | 荷兰语 | 中文 | 原文例句 | 再来一句 |
 |---|---|---|---|
-| zoeken | 寻找，招聘 | Zoek jij werk? | Ik zoek een nieuwe woning. |
-| de collega | 同事 | Wil je met leuke collega's werken? | Mijn collega's zijn heel aardig. |
-| gezond | 健康的 | Vind je lekkere en gezonde snacks ook belangrijk? | Fruit is gezond. |
-| belangrijk | 重要的 | Vind je gezonde snacks belangrijk? | Het is belangrijk om op tijd te komen. |
-| passen bij | 适合，配得上 | Dan pas jij precies bij ons bedrijf. | Deze baan past goed bij mij. |
-| precies | 正好，确切地 | Dan pas jij precies bij ons bedrijf. | Dat is precies wat ik bedoel. |
-| allerlei | 各种各样的 | Wij verkopen allerlei soorten noten. | In de winkel zijn allerlei kleuren. |
-| de soort | 种类 | Wij verkopen allerlei soorten noten. | Welke soort brood wil je? |
-| de noot | 坚果 | Wij verkopen allerlei soorten noten. | Ik eet elke dag een handje noten. |
-| verschillend | 不同的 | Die noten komen uit veel verschillende landen. | We hebben verschillende meningen. |
-| de wereld | 世界 | Over de hele wereld. | Ik wil de hele wereld zien. |
-| verwerken | 加工，处理 | In Nederland verwerken we de nootjes. | De fabriek verwerkt melk tot kaas. |
-| verpakken | 包装 | We verpakken de nootjes in de fabriek. | Kun je het cadeau mooi verpakken? |
-| de fabriek | 工厂 | We verpakken de nootjes in de fabriek. | Mijn vader werkt in een fabriek. |
-| daarna | 然后，之后 | Daarna gaan ze naar verschillende supermarkten. | Eerst eten we, daarna gaan we wandelen. |
-| het magazijn | 仓库 | We zoeken twee mensen voor in het magazijn. | De dozen staan in het magazijn. |
-| de chauffeur | 司机 | We zoeken drie chauffeurs. | De chauffeur rijdt de vrachtwagen. |
-| het kantoor | 办公室 | Bel dan naar kantoor. | Ik werk op kantoor van negen tot vijf. |
+| zoeken | 寻找，招聘 | Zoek jij werk?<br>你在找工作吗？ | Ik zoek een nieuwe woning.<br>我在找新住处。 |
+| de collega | 同事 | Wil je met leuke collega's werken?<br>想和好同事一起工作吗？ | Mijn collega's zijn heel aardig.<br>我的同事都很友好。 |
+| gezond | 健康的 | Vind je lekkere en gezonde snacks ook belangrijk?<br>你也觉得好吃又健康的零食重要吗？ | Fruit is gezond.<br>水果很健康。 |
+| belangrijk | 重要的 | Vind je gezonde snacks belangrijk?<br>你觉得健康零食重要吗？ | Het is belangrijk om op tijd te komen.<br>准时到很重要。 |
+| passen bij | 适合，配得上 | Dan pas jij precies bij ons bedrijf.<br>那你正适合我们公司。 | Deze baan past goed bij mij.<br>这份工作很适合我。 |
+| precies | 正好，确切地 | Dan pas jij precies bij ons bedrijf.<br>那你正适合我们公司。 | Dat is precies wat ik bedoel.<br>我就是这个意思。 |
+| allerlei | 各种各样的 | Wij verkopen allerlei soorten noten.<br>我们卖各种坚果。 | In de winkel zijn allerlei kleuren.<br>店里有各种颜色。 |
+| de soort | 种类 | Wij verkopen allerlei soorten noten.<br>我们卖各种坚果。 | Welke soort brood wil je?<br>你要哪种面包？ |
+| de noot | 坚果 | Wij verkopen allerlei soorten noten.<br>我们卖各种坚果。 | Ik eet elke dag een handje noten.<br>我每天吃一把坚果。 |
+| verschillend | 不同的 | Die noten komen uit veel verschillende landen.<br>这些坚果来自很多不同的国家。 | We hebben verschillende meningen.<br>我们意见不同。 |
+| de wereld | 世界 | Over de hele wereld.<br>世界各地。 | Ik wil de hele wereld zien.<br>我想看遍全世界。 |
+| verwerken | 加工，处理 | In Nederland verwerken we de nootjes.<br>我们在荷兰加工这些坚果。 | De fabriek verwerkt melk tot kaas.<br>工厂把牛奶加工成奶酪。 |
+| verpakken | 包装 | We verpakken de nootjes in de fabriek.<br>我们在工厂里包装坚果。 | Kun je het cadeau mooi verpakken?<br>你能把礼物包漂亮点吗？ |
+| de fabriek | 工厂 | We verpakken de nootjes in de fabriek.<br>我们在工厂里包装坚果。 | Mijn vader werkt in een fabriek.<br>我爸爸在工厂工作。 |
+| daarna | 然后，之后 | Daarna gaan ze naar verschillende supermarkten.<br>然后它们被送到各家超市。 | Eerst eten we, daarna gaan we wandelen.<br>我们先吃饭，然后去散步。 |
+| het magazijn | 仓库 | We zoeken twee mensen voor in het magazijn.<br>我们招两名仓库员工。 | De dozen staan in het magazijn.<br>箱子在仓库里。 |
+| de chauffeur | 司机 | We zoeken drie chauffeurs.<br>我们招三名司机。 | De chauffeur rijdt de vrachtwagen.<br>司机开卡车。 |
+| het kantoor | 办公室 | Bel dan naar kantoor.<br>那就打电话到办公室。 | Ik werk op kantoor van negen tot vijf.<br>我在办公室从九点工作到五点。 |
 
 ## 语法点
 

@@ -42,20 +42,20 @@ Wie is Mourad?
 
 | 荷兰语 | 中文 | 原文例句 | 再来一句 |
 |---|---|---|---|
-| het bericht | 消息，留言 | U heeft één nieuw bericht. | Ik stuur je straks een bericht. |
-| bellen over | 打电话谈…… | Ik bel even over vanavond. | Ik bel over de afspraak van morgen. |
-| afspreken | 约定 | We hadden afgesproken om naar die pizzeria te gaan. | Zullen we afspreken om acht uur? |
-| gesloten | 关门的 | Hij is gesloten. | De bank is zaterdag gesloten. |
-| het bedrijfsfeest | 公司聚会 | Er is een bedrijfsfeest. | Vrijdag is het bedrijfsfeest in het restaurant. |
-| morgenavond | 明天晚上 | Morgenavond is het restaurant wel open. | Morgenavond heb ik geen tijd. |
-| toevallig | 碰巧 | Kun jij dan toevallig ook om zeven uur? | Heb je toevallig een pen? |
-| reserveren | 预订 | Ik zal wel reserveren. | Ik heb een tafel gereserveerd voor twee personen. |
-| de broer | 哥哥，弟弟 | Met mijn broer Mourad naar de film. | Mijn broer is ouder dan ik. |
-| naar de film gaan | 去看电影 | Ik ga naar de film. | Zullen we vanavond naar de film gaan? |
-| meegaan | 一起去（可分动词） | Met ons mee te gaan naar de film. | Ga je mee naar de markt? |
-| ophalen | 接（人） | Ik zal je thuis komen ophalen. | Ik haal je op van het station. |
-| de bioscoop | 电影院 | Bij de bioscoop. | De bioscoop is in het centrum. |
-| terugbellen | 回电话（可分动词） | Wil je mij even terugbellen? | Ik bel je straks terug. |
+| het bericht | 消息，留言 | U heeft één nieuw bericht.<br>您有一条新留言。 | Ik stuur je straks een bericht.<br>我待会儿给你发消息。 |
+| bellen over | 打电话谈…… | Ik bel even over vanavond.<br>我打电话是关于今晚的事。 | Ik bel over de afspraak van morgen.<br>我打电话是关于明天的约。 |
+| afspreken | 约定 | We hadden afgesproken om naar die pizzeria te gaan.<br>我们本来约好去那家披萨店。 | Zullen we afspreken om acht uur?<br>我们约八点好吗？ |
+| gesloten | 关门的 | Hij is gesloten.<br>它关门了。 | De bank is zaterdag gesloten.<br>银行周六关门。 |
+| het bedrijfsfeest | 公司聚会 | Er is een bedrijfsfeest.<br>有公司聚会。 | Vrijdag is het bedrijfsfeest in het restaurant.<br>周五公司聚会在餐厅。 |
+| morgenavond | 明天晚上 | Morgenavond is het restaurant wel open.<br>明晚餐厅是开的。 | Morgenavond heb ik geen tijd.<br>明晚我没时间。 |
+| toevallig | 碰巧 | Kun jij dan toevallig ook om zeven uur?<br>你碰巧那时七点也可以吗？ | Heb je toevallig een pen?<br>你正好有笔吗？ |
+| reserveren | 预订 | Ik zal wel reserveren.<br>我来订位。 | Ik heb een tafel gereserveerd voor twee personen.<br>我订了两个人的桌。 |
+| de broer | 哥哥，弟弟 | Met mijn broer Mourad naar de film.<br>和我哥哥 Mourad 去看电影。 | Mijn broer is ouder dan ik.<br>我哥哥比我大。 |
+| naar de film gaan | 去看电影 | Ik ga naar de film.<br>我去看电影。 | Zullen we vanavond naar de film gaan?<br>我们今晚去看电影好吗？ |
+| meegaan | 一起去（可分动词） | Met ons mee te gaan naar de film.<br>和我们一起去看电影。 | Ga je mee naar de markt?<br>你一起去市场吗？ |
+| ophalen | 接（人） | Ik zal je thuis komen ophalen.<br>我去你家接你。 | Ik haal je op van het station.<br>我去车站接你。 |
+| de bioscoop | 电影院 | Bij de bioscoop.<br>在电影院。 | De bioscoop is in het centrum.<br>电影院在市中心。 |
+| terugbellen | 回电话（可分动词） | Wil je mij even terugbellen?<br>你能给我回个电话吗？ | Ik bel je straks terug.<br>我待会儿给你回电话。 |
 
 ## 语法点
 

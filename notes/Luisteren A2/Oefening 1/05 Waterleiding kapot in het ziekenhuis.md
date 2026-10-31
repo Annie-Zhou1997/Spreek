@@ -48,24 +48,24 @@ Savina is op treinstation Zuid. Hoe kan ze het beste naar het ziekenhuis gaan?
 
 | 荷兰语 | 中文 | 原文例句 | 再来一句 |
 |---|---|---|---|
-| de waterleiding | 水管 | Er is een waterleiding kapotgegaan. | De waterleiding is bevroren. |
-| kapotgaan | 坏掉 | Er is een waterleiding kapotgegaan. | Mijn telefoon is gisteren kapotgegaan. |
-| last hebben van | 受……影响，受困扰 | Het ziekenhuis heeft daar veel last van. | Ik heb last van mijn rug. |
-| de begane grond | 一楼（地面层） | De begane grond is helemaal overstroomd. | De winkel is op de begane grond. |
-| overstroomd | 被淹的 | De begane grond is helemaal overstroomd. | Na de regen was de kelder overstroomd. |
-| onder water staan | 被水淹 | Alles staat onder water. | De straat staat onder water. |
-| de patiënt | 病人 | Gelukkig lagen er geen patiënten. | De patiënt moet een week in het ziekenhuis blijven. |
-| de verdieping | 楼层 | Alle patiënten op de eerste verdieping. | Ik woon op de derde verdieping. |
-| de plek | 地方 | Naar een andere plek gebracht. | Dit is een mooie plek om te picknicken. |
-| volgens | 据……说 | Volgens het ziekenhuis zijn de patiënten niet in gevaar geweest. | Volgens mijn buurman wordt het morgen mooi weer. |
-| in gevaar | 处于危险中 | De patiënten zijn niet in gevaar geweest. | De kinderen waren niet in gevaar. |
-| waarschijnlijk | 很可能 | De waterleiding is waarschijnlijk pas donderdag gemaakt. | Ik kom waarschijnlijk wat later. |
-| pas | 才（比预期晚） | Pas donderdag gemaakt. | De bus komt pas over een half uur. |
-| de gemeente | 市政府 | Dat is later dan de gemeente zei. | Ik moet naar de gemeente voor mijn paspoort. |
-| vanaf | 从……起 | Vanaf vrijdag is het ziekenhuis weer open. | Vanaf maandag werk ik hier. |
-| voorlopig | 暂时 | Er rijden voorlopig geen bussen. | Voorlopig blijf ik in Nederland. |
-| doordat | 由于（引导原因从句） | Dat komt doordat de weg onder water staat. | De trein is laat doordat het sneeuwt. |
-| het beste | 最好 | U kunt het beste lopen. | Je kunt het beste de fiets nemen. |
+| de waterleiding | 水管 | Er is een waterleiding kapotgegaan.<br>一根水管坏了。 | De waterleiding is bevroren.<br>水管冻住了。 |
+| kapotgaan | 坏掉 | Er is een waterleiding kapotgegaan.<br>一根水管坏了。 | Mijn telefoon is gisteren kapotgegaan.<br>我的手机昨天坏了。 |
+| last hebben van | 受……影响，受困扰 | Het ziekenhuis heeft daar veel last van.<br>医院受到很大影响。 | Ik heb last van mijn rug.<br>我背不舒服。 |
+| de begane grond | 一楼（地面层） | De begane grond is helemaal overstroomd.<br>一楼全被淹了。 | De winkel is op de begane grond.<br>商店在一楼。 |
+| overstroomd | 被淹的 | De begane grond is helemaal overstroomd.<br>一楼全被淹了。 | Na de regen was de kelder overstroomd.<br>雨后地下室被淹了。 |
+| onder water staan | 被水淹 | Alles staat onder water.<br>一切都泡在水里。 | De straat staat onder water.<br>街道被淹了。 |
+| de patiënt | 病人 | Gelukkig lagen er geen patiënten.<br>幸好那里没有病人。 | De patiënt moet een week in het ziekenhuis blijven.<br>病人要住院一周。 |
+| de verdieping | 楼层 | Alle patiënten op de eerste verdieping.<br>二楼的所有病人。 | Ik woon op de derde verdieping.<br>我住在四楼。 |
+| de plek | 地方 | Naar een andere plek gebracht.<br>被转移到别处。 | Dit is een mooie plek om te picknicken.<br>这是野餐的好地方。 |
+| volgens | 据……说 | Volgens het ziekenhuis zijn de patiënten niet in gevaar geweest.<br>据医院说，病人没有遇到危险。 | Volgens mijn buurman wordt het morgen mooi weer.<br>据我邻居说明天天气好。 |
+| in gevaar | 处于危险中 | De patiënten zijn niet in gevaar geweest.<br>病人没有遇到危险。 | De kinderen waren niet in gevaar.<br>孩子们没有危险。 |
+| waarschijnlijk | 很可能 | De waterleiding is waarschijnlijk pas donderdag gemaakt.<br>水管大概要到周四才修好。 | Ik kom waarschijnlijk wat later.<br>我可能会晚点到。 |
+| pas | 才（比预期晚） | Pas donderdag gemaakt.<br>要到周四才修好。 | De bus komt pas over een half uur.<br>公交车还要半小时才来。 |
+| de gemeente | 市政府 | Dat is later dan de gemeente zei.<br>这比市政府说的晚。 | Ik moet naar de gemeente voor mijn paspoort.<br>我得去市政府办护照。 |
+| vanaf | 从……起 | Vanaf vrijdag is het ziekenhuis weer open.<br>从周五起医院重新开放。 | Vanaf maandag werk ik hier.<br>从周一起我在这里工作。 |
+| voorlopig | 暂时 | Er rijden voorlopig geen bussen.<br>暂时没有公交车。 | Voorlopig blijf ik in Nederland.<br>我暂时留在荷兰。 |
+| doordat | 由于（引导原因从句） | Dat komt doordat de weg onder water staat.<br>这是因为路也被淹了。 | De trein is laat doordat het sneeuwt.<br>因为下雪火车晚点了。 |
+| het beste | 最好 | U kunt het beste lopen.<br>您最好步行。 | Je kunt het beste de fiets nemen.<br>你最好骑自行车。 |
 
 ## 语法点
 

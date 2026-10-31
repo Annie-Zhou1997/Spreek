@@ -19,21 +19,21 @@ Super, tot snel. Tot maandag.
 
 | 荷兰语 | 中文 | 原文例句 | 再来一句 |
 |---|---|---|---|
-| met + 名字 | 打电话时报名字：我是…… | Hallo, met Stanley. | Goedemiddag, met Anne. |
-| binnenkort | 很快，不久 | We gaan binnenkort verhuizen. | Binnenkort begint de cursus. |
-| verhuizen | 搬家 | We gaan binnenkort verhuizen naar de Molenstraat. | Volgend jaar verhuis ik naar Amsterdam. |
-| niet meer | 不再 | We wonen dan niet meer in een flat. | Ik rook niet meer. |
-| de flat | 公寓楼里的住房 | We wonen dan niet meer in een flat. | Zij woont op de derde verdieping van een flat. |
-| het rijtjeshuis | 联排房 | Maar in een rijtjeshuis. | Een rijtjeshuis heeft vaak een tuin. |
-| een stuk groter | 大得多 | Een rijtjeshuis, een stuk groter. | Het nieuwe huis is een stuk groter. |
-| fijn | 好的，舒服的 | Zo fijn! | Wat fijn dat je komt! |
-| al | 已经，就 | Deze zondag al. | Ben je er al? |
-| dus | 所以 | Dus ik moet nog heel veel doen. | Het regent, dus ik blijf thuis. |
-| tijd hebben om te | 有时间做…… | Heb jij tijd om te helpen? | Ik heb geen tijd om te koken. |
-| ophangen | 挂起来（可分动词） | Helpen met het ophangen van een paar dingen. | Kun je de jas ophangen? |
-| de lamp | 灯 | Lampen en schilderijen. | De lamp in de gang is kapot. |
-| het schilderij | 画（挂在墙上的） | Lampen en schilderijen. | Dit schilderij is van mijn oma. |
-| tot snel | 回头见 | Super, tot snel. | Bedankt voor je hulp, tot snel! |
+| met + 名字 | 打电话时报名字：我是…… | Hallo, met Stanley.<br>你好，我是 Stanley。 | Goedemiddag, met Anne.<br>下午好，我是 Anne。 |
+| binnenkort | 很快，不久 | We gaan binnenkort verhuizen.<br>我们很快要搬家。 | Binnenkort begint de cursus.<br>课程很快开始。 |
+| verhuizen | 搬家 | We gaan binnenkort verhuizen naar de Molenstraat.<br>我们很快要搬到 Molenstraat。 | Volgend jaar verhuis ik naar Amsterdam.<br>明年我搬到阿姆斯特丹。 |
+| niet meer | 不再 | We wonen dan niet meer in een flat.<br>到时候我们就不住公寓了。 | Ik rook niet meer.<br>我不抽烟了。 |
+| de flat | 公寓楼里的住房 | We wonen dan niet meer in een flat.<br>到时候我们就不住公寓了。 | Zij woont op de derde verdieping van een flat.<br>她住在公寓楼四楼。 |
+| het rijtjeshuis | 联排房 | Maar in een rijtjeshuis.<br>而是住联排房。 | Een rijtjeshuis heeft vaak een tuin.<br>联排房通常有花园。 |
+| een stuk groter | 大得多 | Een rijtjeshuis, een stuk groter.<br>联排房，大不少。 | Het nieuwe huis is een stuk groter.<br>新房子大得多。 |
+| fijn | 好的，舒服的 | Zo fijn!<br>太好了！ | Wat fijn dat je komt!<br>你能来太好了！ |
+| al | 已经，就 | Deze zondag al.<br>就这个星期天。 | Ben je er al?<br>你已经到了吗？ |
+| dus | 所以 | Dus ik moet nog heel veel doen.<br>所以我还有很多事要做。 | Het regent, dus ik blijf thuis.<br>下雨了，所以我待在家。 |
+| tijd hebben om te | 有时间做…… | Heb jij tijd om te helpen?<br>你有时间帮忙吗？ | Ik heb geen tijd om te koken.<br>我没时间做饭。 |
+| ophangen | 挂起来（可分动词） | Helpen met het ophangen van een paar dingen.<br>帮忙挂几样东西。 | Kun je de jas ophangen?<br>你能把外套挂起来吗？ |
+| de lamp | 灯 | Lampen en schilderijen.<br>灯和画。 | De lamp in de gang is kapot.<br>走廊的灯坏了。 |
+| het schilderij | 画（挂在墙上的） | Lampen en schilderijen.<br>灯和画。 | Dit schilderij is van mijn oma.<br>这幅画是我奶奶的。 |
+| tot snel | 回头见 | Super, tot snel.<br>太好了，回头见。 | Bedankt voor je hulp, tot snel!<br>谢谢你的帮忙，回头见！ |
 
 ## 语法点
 

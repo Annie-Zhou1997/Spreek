@@ -39,26 +39,26 @@ Waar spreken de cursisten morgen af?
 
 | 荷兰语 | 中文 | 原文例句 | 再来一句 |
 |---|---|---|---|
-| op een cursus zitten | 在上一门课 | Paula zit op een cursus verhalen schrijven. | Ik zit op een cursus fotografie. |
-| het verhaal | 故事 | Een cursus verhalen schrijven. | Mijn oma vertelt mooie verhalen. |
-| bespreken | 讨论，讲评 | Vandaag bespreek ik de laatste opdracht. | We bespreken morgen de planning. |
-| de opdracht | 作业，任务 | De laatste opdracht. | De opdracht is een brief schrijven. |
-| het huiswerk | 家庭作业 | Als huiswerkopdracht gemaakt. | Ik heb mijn huiswerk nog niet gemaakt. |
-| straks | 待会儿 | We gaan straks samen jullie verhalen lezen. | Ik bel je straks. |
-| starten met | 开始 | Het project waar we morgen mee gaan starten. | We starten met de les om negen uur. |
-| de natuur | 自然 | Verhalen over de natuur. | In het weekend gaan we de natuur in. |
-| een aantal | 几个，一些 | Een aantal verhalen schrijven. | Ik heb een aantal vragen. |
-| het einde | 结束，末尾 | Aan het einde van de les. | Aan het einde van de maand krijg ik salaris. |
-| meenemen | 带来（可分动词） | Wie morgen wat meeneemt. | Neem je paraplu mee. |
-| ik bedoel | 我的意思是 | Ik bedoel een woordenboek of zo. | Ik bedoel niet morgen, maar overmorgen. |
-| of zo | 之类的 | Een woordenboek of zo. | Wil je koffie of thee of zo? |
-| eigen | 自己的 | Iedereen moet zijn eigen schrijfblok meenemen. | Ik heb mijn eigen kamer. |
-| het schrijfblok | 写字本 | Zijn eigen schrijfblok meenemen. | Ik schrijf alles op in mijn schrijfblok. |
-| let op | 注意 | Let op: we spreken morgen in het park af. | Let op, de vloer is nat. |
-| via | 经过，通过 | Via het park lopen we naar de stadsboerderij. | Ik ga via Utrecht naar Amsterdam. |
-| de stadsboerderij | 城市农场 | Via het park naar de stadsboerderij. | Op de stadsboerderij zijn geiten en kippen. |
-| daarover later meer | 这个以后再说 | Maar daarover later meer. | Dat is een lang verhaal, daarover later meer. |
-| overgaan naar | 转到（下一个话题） | Dan ga ik nu over naar het lezen van jullie verhalen. | We gaan nu over naar het volgende punt. |
+| op een cursus zitten | 在上一门课 | Paula zit op een cursus verhalen schrijven.<br>Paula 在上写故事的课。 | Ik zit op een cursus fotografie.<br>我在上摄影课。 |
+| het verhaal | 故事 | Een cursus verhalen schrijven.<br>写故事的课。 | Mijn oma vertelt mooie verhalen.<br>我奶奶讲很好听的故事。 |
+| bespreken | 讨论，讲评 | Vandaag bespreek ik de laatste opdracht.<br>今天我讲评上一次的作业。 | We bespreken morgen de planning.<br>我们明天讨论计划。 |
+| de opdracht | 作业，任务 | De laatste opdracht.<br>上一次的作业。 | De opdracht is een brief schrijven.<br>作业是写一封信。 |
+| het huiswerk | 家庭作业 | Als huiswerkopdracht gemaakt.<br>作为家庭作业写的。 | Ik heb mijn huiswerk nog niet gemaakt.<br>我还没做作业。 |
+| straks | 待会儿 | We gaan straks samen jullie verhalen lezen.<br>待会儿我们一起读你们的故事。 | Ik bel je straks.<br>我待会儿给你打电话。 |
+| starten met | 开始 | Het project waar we morgen mee gaan starten.<br>我们明天开始的项目。 | We starten met de les om negen uur.<br>我们九点开始上课。 |
+| de natuur | 自然 | Verhalen over de natuur.<br>关于自然的故事。 | In het weekend gaan we de natuur in.<br>周末我们去亲近大自然。 |
+| een aantal | 几个，一些 | Een aantal verhalen schrijven.<br>写几篇故事。 | Ik heb een aantal vragen.<br>我有几个问题。 |
+| het einde | 结束，末尾 | Aan het einde van de les.<br>课结束的时候。 | Aan het einde van de maand krijg ik salaris.<br>月底我拿工资。 |
+| meenemen | 带来（可分动词） | Wie morgen wat meeneemt.<br>明天谁带什么。 | Neem je paraplu mee.<br>带上你的伞。 |
+| ik bedoel | 我的意思是 | Ik bedoel een woordenboek of zo.<br>我是说词典之类的。 | Ik bedoel niet morgen, maar overmorgen.<br>我说的不是明天，是后天。 |
+| of zo | 之类的 | Een woordenboek of zo.<br>词典之类的。 | Wil je koffie of thee of zo?<br>你要咖啡、茶之类的吗？ |
+| eigen | 自己的 | Iedereen moet zijn eigen schrijfblok meenemen.<br>每个人都要带自己的写字本。 | Ik heb mijn eigen kamer.<br>我有自己的房间。 |
+| het schrijfblok | 写字本 | Zijn eigen schrijfblok meenemen.<br>带自己的写字本。 | Ik schrijf alles op in mijn schrijfblok.<br>我把一切都记在写字本上。 |
+| let op | 注意 | Let op: we spreken morgen in het park af.<br>注意：明天我们在公园集合。 | Let op, de vloer is nat.<br>注意，地板湿。 |
+| via | 经过，通过 | Via het park lopen we naar de stadsboerderij.<br>我们穿过公园走到城市农场。 | Ik ga via Utrecht naar Amsterdam.<br>我经乌得勒支去阿姆斯特丹。 |
+| de stadsboerderij | 城市农场 | Via het park naar de stadsboerderij.<br>穿过公园到城市农场。 | Op de stadsboerderij zijn geiten en kippen.<br>城市农场里有山羊和鸡。 |
+| daarover later meer | 这个以后再说 | Maar daarover later meer.<br>不过这个以后再说。 | Dat is een lang verhaal, daarover later meer.<br>说来话长，以后再说。 |
+| overgaan naar | 转到（下一个话题） | Dan ga ik nu over naar het lezen van jullie verhalen.<br>那我现在转到读你们的故事。 | We gaan nu over naar het volgende punt.<br>我们现在进入下一点。 |
 
 ## 语法点
 

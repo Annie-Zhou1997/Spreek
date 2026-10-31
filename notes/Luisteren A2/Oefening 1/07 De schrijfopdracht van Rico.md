@@ -43,23 +43,23 @@ Welk advies over brieven schrijven geeft de docent aan Rico?
 
 | 荷兰语 | 中文 | 原文例句 | 再来一句 |
 |---|---|---|---|
-| een cursus doen | 上一门课 | Melvin doet een cursus Engels. | Ik doe een cursus Nederlands. |
-| de medecursist | 同学（同一门课的） | Zijn medecursist Rico praat met de docent. | Mijn medecursisten komen uit veel landen. |
-| de docent | 老师（成人教育） | Rico praat met de docent. | De docent legt de grammatica uit. |
-| de schrijfopdracht | 写作作业 | Hier, Rico, je schrijfopdracht. | De schrijfopdracht is een brief aan de gemeente. |
-| de fout | 错误 | Je hebt bijna geen fouten gemaakt. | Ik maak nog veel fouten. |
-| de volgorde | 顺序 | De volgorde van de woorden. | De volgorde van de zinnen is goed. |
-| het werkwoord | 动词 | Een foutje met de werkwoorden. | Het werkwoord staat op de tweede plaats. |
-| hoeven niet te | 不必 | Die hoef je nog niet allemaal te kennen. | Je hoeft niet te betalen. |
-| de spelfout | 拼写错误 | Er zitten nog best veel spelfouten in. | Ik heb drie spelfouten gemaakt. |
-| best veel | 还挺多 | Er zitten nog best veel spelfouten in. | Het was best veel werk. |
-| het woordenboek | 词典 | Ik kon niet alle woorden vinden in mijn woordenboek. | Mag ik je woordenboek even lenen? |
-| doorlezen | 通读（可分动词） | Iemand kan je brief nog eens doorlezen. | Lees de tekst eerst helemaal door. |
-| af zijn | 完成了 | Als hij af is. | Is je huiswerk al af? |
-| bijvoorbeeld | 比如 | Aan Melvin bijvoorbeeld. | Ik hou van fruit, bijvoorbeeld appels. |
-| eruit halen | 挑出来 | Die kan er dan nog fouten uithalen. | Kun je de fouten eruit halen? |
-| extra | 额外的 | Een goede extra oefening. | Ik wil graag een extra deken. |
-| de oefening | 练习 | Een goede extra oefening. | Maak oefening drie op bladzijde tien. |
+| een cursus doen | 上一门课 | Melvin doet een cursus Engels.<br>Melvin 在上英语课。 | Ik doe een cursus Nederlands.<br>我在上荷兰语课。 |
+| de medecursist | 同学（同一门课的） | Zijn medecursist Rico praat met de docent.<br>他的同学 Rico 在和老师说话。 | Mijn medecursisten komen uit veel landen.<br>我的同学来自很多国家。 |
+| de docent | 老师（成人教育） | Rico praat met de docent.<br>Rico 在和老师说话。 | De docent legt de grammatica uit.<br>老师讲解语法。 |
+| de schrijfopdracht | 写作作业 | Hier, Rico, je schrijfopdracht.<br>给，Rico，你的写作作业。 | De schrijfopdracht is een brief aan de gemeente.<br>写作作业是给市政府写一封信。 |
+| de fout | 错误 | Je hebt bijna geen fouten gemaakt.<br>你几乎没犯错。 | Ik maak nog veel fouten.<br>我还犯很多错。 |
+| de volgorde | 顺序 | De volgorde van de woorden.<br>词序。 | De volgorde van de zinnen is goed.<br>句子的顺序是对的。 |
+| het werkwoord | 动词 | Een foutje met de werkwoorden.<br>动词上的小错误。 | Het werkwoord staat op de tweede plaats.<br>动词在第二位。 |
+| hoeven niet te | 不必 | Die hoef je nog niet allemaal te kennen.<br>那些你还不用全会。 | Je hoeft niet te betalen.<br>你不用付钱。 |
+| de spelfout | 拼写错误 | Er zitten nog best veel spelfouten in.<br>里面拼写错误还挺多。 | Ik heb drie spelfouten gemaakt.<br>我犯了三个拼写错误。 |
+| best veel | 还挺多 | Er zitten nog best veel spelfouten in.<br>里面拼写错误还挺多。 | Het was best veel werk.<br>工作量还挺大。 |
+| het woordenboek | 词典 | Ik kon niet alle woorden vinden in mijn woordenboek.<br>有些词我在词典里找不到。 | Mag ik je woordenboek even lenen?<br>我能借一下你的词典吗？ |
+| doorlezen | 通读（可分动词） | Iemand kan je brief nog eens doorlezen.<br>可以让别人把你的信再读一遍。 | Lees de tekst eerst helemaal door.<br>先把课文通读一遍。 |
+| af zijn | 完成了 | Als hij af is.<br>等它写完的时候。 | Is je huiswerk al af?<br>你作业做完了吗？ |
+| bijvoorbeeld | 比如 | Aan Melvin bijvoorbeeld.<br>比如给 Melvin。 | Ik hou van fruit, bijvoorbeeld appels.<br>我喜欢水果，比如苹果。 |
+| eruit halen | 挑出来 | Die kan er dan nog fouten uithalen.<br>他可以帮你挑出错误。 | Kun je de fouten eruit halen?<br>你能把错误挑出来吗？ |
+| extra | 额外的 | Een goede extra oefening.<br>一个很好的额外练习。 | Ik wil graag een extra deken.<br>我想多要一条毯子。 |
+| de oefening | 练习 | Een goede extra oefening.<br>一个很好的额外练习。 | Maak oefening drie op bladzijde tien.<br>做第十页的练习三。 |
 
 ## 语法点
 

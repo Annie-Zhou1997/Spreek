@@ -26,24 +26,24 @@ Top, dan zie ik je zaterdag. Tot dan.
 
 | 荷兰语 | 中文 | 原文例句 | 再来一句 |
 |---|---|---|---|
-| vieren | 庆祝 | Dat moeten we vieren. | We vieren mijn verjaardag op zaterdag. |
-| iets te vieren | 有什么要庆祝的 | Vertel, iets te vieren? | Jullie zien er blij uit. Iets te vieren? |
-| zwanger | 怀孕的 | Danielle is zwanger. | Mijn zus is vier maanden zwanger. |
-| het kindje | 小孩，宝宝 | We krijgen een kindje. | Het kindje slaapt veel. |
-| gefeliciteerd | 恭喜 | Gefeliciteerd, joh. | Gefeliciteerd met je nieuwe baan! |
-| uitnodigen | 邀请（可分动词） | Ik nodig Paul ook uit. | Zij nodigt haar collega's uit voor het feest. |
-| komende | 即将到来的 | Komende zaterdag komen we bij ons eten. | Komende week heb ik examen. |
-| de vriendin | 女性朋友；女朋友 | Een paar vriendinnen van Danielle komen ook. | Mijn vriendin woont in Utrecht. |
-| hartstikke | 非常（口语） | Hartstikke gezellig. | Dat is hartstikke leuk! |
-| gezellig | 热闹的，温馨的 | Ja, leuk en hartstikke gezellig. | Het was een gezellige avond. |
-| klussen | 干家务活，修修补补 | Kan jij helpen klussen? | In het weekend ga ik klussen in de keuken. |
-| de aankomende tijd | 接下来一段时间 | Kan jij helpen klussen de aankomende tijd? | De aankomende tijd heb ik het druk. |
-| een aantal | 一些，若干 | Er moeten een aantal muren geschilderd worden. | Een aantal collega's is ziek. |
-| de muur | 墙 | Er moeten een aantal muren geschilderd worden. | De muur is wit. |
-| schilderen | 刷漆；画画 | Er moeten een aantal muren geschilderd worden. | We schilderen de slaapkamer blauw. |
-| de vloer | 地板 | Er moet ook een nieuwe vloer komen. | De vloer is nat, pas op! |
-| tuurlijk | 当然（natuurlijk 的口语说法） | Tuurlijk, geen probleem. | Kun je me helpen? Tuurlijk! |
-| tot dan | 到时见 | Dan zie ik je zaterdag. Tot dan. | We spreken af om acht uur. Tot dan! |
+| vieren | 庆祝 | Dat moeten we vieren.<br>这得庆祝一下。 | We vieren mijn verjaardag op zaterdag.<br>我们周六庆祝我的生日。 |
+| iets te vieren | 有什么要庆祝的 | Vertel, iets te vieren?<br>说说看，有什么要庆祝的？ | Jullie zien er blij uit. Iets te vieren?<br>你们看起来很高兴，有喜事？ |
+| zwanger | 怀孕的 | Danielle is zwanger.<br>Danielle 怀孕了。 | Mijn zus is vier maanden zwanger.<br>我姐姐怀孕四个月了。 |
+| het kindje | 小孩，宝宝 | We krijgen een kindje.<br>我们要有孩子了。 | Het kindje slaapt veel.<br>宝宝睡得很多。 |
+| gefeliciteerd | 恭喜 | Gefeliciteerd, joh.<br>恭喜啊。 | Gefeliciteerd met je nieuwe baan!<br>恭喜你找到新工作！ |
+| uitnodigen | 邀请（可分动词） | Ik nodig Paul ook uit.<br>我也邀请了 Paul。 | Zij nodigt haar collega's uit voor het feest.<br>她邀请同事来参加聚会。 |
+| komende | 即将到来的 | Komende zaterdag komen we bij ons eten.<br>下周六来我们家吃饭。 | Komende week heb ik examen.<br>下周我有考试。 |
+| de vriendin | 女性朋友；女朋友 | Een paar vriendinnen van Danielle komen ook.<br>Danielle 的几个朋友也来。 | Mijn vriendin woont in Utrecht.<br>我女朋友住在乌得勒支。 |
+| hartstikke | 非常（口语） | Hartstikke gezellig.<br>特别热闹。 | Dat is hartstikke leuk!<br>那太好了！ |
+| gezellig | 热闹的，温馨的 | Ja, leuk en hartstikke gezellig.<br>好啊，肯定很热闹。 | Het was een gezellige avond.<br>那是个愉快的晚上。 |
+| klussen | 干家务活，修修补补 | Kan jij helpen klussen?<br>你能帮忙干活吗？ | In het weekend ga ik klussen in de keuken.<br>周末我要修整厨房。 |
+| de aankomende tijd | 接下来一段时间 | Kan jij helpen klussen de aankomende tijd?<br>接下来一段时间你能帮忙干活吗？ | De aankomende tijd heb ik het druk.<br>接下来一段时间我很忙。 |
+| een aantal | 一些，若干 | Er moeten een aantal muren geschilderd worden.<br>有几面墙要刷。 | Een aantal collega's is ziek.<br>有几个同事病了。 |
+| de muur | 墙 | Er moeten een aantal muren geschilderd worden.<br>有几面墙要刷。 | De muur is wit.<br>墙是白色的。 |
+| schilderen | 刷漆；画画 | Er moeten een aantal muren geschilderd worden.<br>有几面墙要刷。 | We schilderen de slaapkamer blauw.<br>我们把卧室刷成蓝色。 |
+| de vloer | 地板 | Er moet ook een nieuwe vloer komen.<br>还得铺新地板。 | De vloer is nat, pas op!<br>地板湿，小心！ |
+| tuurlijk | 当然（natuurlijk 的口语说法） | Tuurlijk, geen probleem.<br>当然，没问题。 | Kun je me helpen? Tuurlijk!<br>你能帮我吗？当然！ |
+| tot dan | 到时见 | Dan zie ik je zaterdag. Tot dan.<br>那周六见，到时见。 | We spreken af om acht uur. Tot dan!<br>我们约八点，到时见！ |
 
 ## 语法点
 

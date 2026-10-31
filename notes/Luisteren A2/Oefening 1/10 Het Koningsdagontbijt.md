@@ -47,26 +47,26 @@ Waarmee eindigt de Koningsdag?
 
 | 荷兰语 | 中文 | 原文例句 | 再来一句 |
 |---|---|---|---|
-| de basisschool | 小学 | De kinderen zitten op de basisschool. | Mijn dochter gaat volgend jaar naar de basisschool. |
-| de leraar | 老师（中小学） | Ze praten met de leraar van hun kinderen. | De leraar geeft les aan groep vijf. |
-| Koningsdag | 国王节（4 月 27 日） | Het Koningsdagontbijt op vrijdag 27 april. | Op Koningsdag draagt iedereen oranje. |
-| het ontbijt / ontbijten | 早餐 / 吃早餐 | Dan ontbijten we met de hele klas. | Ik ontbijt met brood en thee. |
-| half negen | 八点半 | Het begint om half negen. | De school begint om half negen. |
-| de klas | 班级 | Met de hele klas op school. | In mijn klas zitten twintig kinderen. |
-| naar buiten | 到外面 | Om half tien gaan we naar buiten. | De kinderen spelen graag buiten. |
-| het sportveld | 运动场 | Naar het sportveld. | Het sportveld ligt achter de school. |
-| de ouder | 家长 | Daarbij helpen al andere ouders. | De ouders komen om drie uur. |
-| klaarzetten | 摆好，准备好（可分动词） | Hoe laat moeten we alles klaarzetten? | Ik zet de borden alvast klaar. |
-| een half uur | 半小时 | Dat duurt wel een half uur. | De bus komt over een half uur. |
-| trouwens | 对了，顺便说 | Oh, trouwens, moeten wij ook boodschappen doen? | Trouwens, hoe gaat het met je moeder? |
-| boodschappen doen | 买日用品 | Moeten wij ook boodschappen doen? | Ik doe op zaterdag boodschappen. |
-| het lied | 歌 | Dansen op een heel leuk lied. | De kinderen zingen een lied. |
-| het spel | 游戏 | Daarna doen we allerlei spellen. | Dit spel is leuk voor kinderen. |
-| de wedstrijd | 比赛 | Aan het eind van de dag is er een wedstrijd. | Wie wint de wedstrijd? |
-| versieren | 装饰 | De kinderen gaan hun fiets versieren. | We versieren de kamer voor het feest. |
-| winnen | 赢 | De mooiste fiets wint een prijs. | Ons team heeft gewonnen. |
-| de prijs | 奖；价格 | De mooiste fiets wint een prijs. | De eerste prijs is een boek. |
-| vast | 肯定，想必 | Het wordt vast een leuke dag. | Hij komt vast wel. |
+| de basisschool | 小学 | De kinderen zitten op de basisschool.<br>孩子们在上小学。 | Mijn dochter gaat volgend jaar naar de basisschool.<br>我女儿明年上小学。 |
+| de leraar | 老师（中小学） | Ze praten met de leraar van hun kinderen.<br>她们和孩子的老师说话。 | De leraar geeft les aan groep vijf.<br>这位老师教五年级。 |
+| Koningsdag | 国王节（4 月 27 日） | Het Koningsdagontbijt op vrijdag 27 april.<br>4 月 27 日星期五的国王节早餐。 | Op Koningsdag draagt iedereen oranje.<br>国王节大家都穿橙色。 |
+| het ontbijt / ontbijten | 早餐 / 吃早餐 | Dan ontbijten we met de hele klas.<br>我们全班一起吃早餐。 | Ik ontbijt met brood en thee.<br>我早餐吃面包喝茶。 |
+| half negen | 八点半 | Het begint om half negen.<br>八点半开始。 | De school begint om half negen.<br>学校八点半开始。 |
+| de klas | 班级 | Met de hele klas op school.<br>全班在学校。 | In mijn klas zitten twintig kinderen.<br>我们班有二十个孩子。 |
+| naar buiten | 到外面 | Om half tien gaan we naar buiten.<br>九点半我们去外面。 | De kinderen spelen graag buiten.<br>孩子们喜欢在外面玩。 |
+| het sportveld | 运动场 | Naar het sportveld.<br>去运动场。 | Het sportveld ligt achter de school.<br>运动场在学校后面。 |
+| de ouder | 家长 | Daarbij helpen al andere ouders.<br>那边已经有别的家长帮忙。 | De ouders komen om drie uur.<br>家长们三点来。 |
+| klaarzetten | 摆好，准备好（可分动词） | Hoe laat moeten we alles klaarzetten?<br>我们几点要把东西准备好？ | Ik zet de borden alvast klaar.<br>我先把盘子摆好。 |
+| een half uur | 半小时 | Dat duurt wel een half uur.<br>那要半小时。 | De bus komt over een half uur.<br>公交车半小时后来。 |
+| trouwens | 对了，顺便说 | Oh, trouwens, moeten wij ook boodschappen doen?<br>对了，我们也要去买东西吗？ | Trouwens, hoe gaat het met je moeder?<br>对了，你妈妈怎么样？ |
+| boodschappen doen | 买日用品 | Moeten wij ook boodschappen doen?<br>我们也要去买东西吗？ | Ik doe op zaterdag boodschappen.<br>我周六买东西。 |
+| het lied | 歌 | Dansen op een heel leuk lied.<br>跟着一首很好听的歌跳舞。 | De kinderen zingen een lied.<br>孩子们唱一首歌。 |
+| het spel | 游戏 | Daarna doen we allerlei spellen.<br>然后我们玩各种游戏。 | Dit spel is leuk voor kinderen.<br>这个游戏适合孩子。 |
+| de wedstrijd | 比赛 | Aan het eind van de dag is er een wedstrijd.<br>一天的最后有个比赛。 | Wie wint de wedstrijd?<br>谁赢了比赛？ |
+| versieren | 装饰 | De kinderen gaan hun fiets versieren.<br>孩子们装饰自己的自行车。 | We versieren de kamer voor het feest.<br>我们为聚会装饰房间。 |
+| winnen | 赢 | De mooiste fiets wint een prijs.<br>最漂亮的自行车赢一个奖。 | Ons team heeft gewonnen.<br>我们队赢了。 |
+| de prijs | 奖；价格 | De mooiste fiets wint een prijs.<br>最漂亮的自行车赢一个奖。 | De eerste prijs is een boek.<br>一等奖是一本书。 |
+| vast | 肯定，想必 | Het wordt vast een leuke dag.<br>肯定会是开心的一天。 | Hij komt vast wel.<br>他肯定会来。 |
 
 ## 语法点
 
