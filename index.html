@@ -1,0 +1,398 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icon.svg">
+<meta name="theme-color" content="#1f4e9c">
+<title>Spreek</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,400;7..72,500;7..72,600&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/marked/12.0.2/marked.min.js"></script>
+</head>
+<body>
+<style>
+/* Layout: phone = one screen at a time (list / note); wide = list on the left, note on the right. */
+:root{
+  --bg:#f6f7f9; --surface:#ffffff; --fg:#1b2230; --muted:#5d6676; --line:#dfe3ea;
+  --accent:#1f4e9c; --accent-soft:#e6edf8; --hot:#fff1b8; --hot-line:#d9a400;
+  --f-read:"Literata",Georgia,"Times New Roman","Songti SC","SimSun",serif;
+  --f-ui:"IBM Plex Sans",-apple-system,"PingFang SC","Microsoft YaHei",system-ui,sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#12161d; --surface:#1a2029; --fg:#e7ebf1; --muted:#9aa4b3; --line:#2c3441;
+  --accent:#8fb2ec; --accent-soft:#233149; --hot:#4a4220; --hot-line:#c9a227; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#12161d; --surface:#1a2029; --fg:#e7ebf1; --muted:#9aa4b3; --line:#2c3441;
+  --accent:#8fb2ec; --accent-soft:#233149; --hot:#4a4220; --hot-line:#c9a227; color-scheme:dark}
+
+html,body{height:100%}
+body{background:var(--bg);color:var(--fg);font-family:var(--f-ui);font-size:15px;line-height:1.5;margin:0}
+.app{display:grid;grid-template-columns:1fr;height:100%;max-width:1100px;margin:0 auto}
+@media (min-width:760px){.app{grid-template-columns:280px 1fr}}
+.pane{display:flex;flex-direction:column;min-width:0;min-height:0;height:100%}
+.pane[hidden]{display:none}
+@media (min-width:760px){.pane{display:flex!important}}
+
+.top{display:flex;align-items:center;gap:8px;padding-block:10px;padding-inline:16px;border-bottom:1px solid var(--line);background:var(--surface);flex-wrap:wrap;position:sticky;top:env(safe-area-inset-top,0px);z-index:2}
+h1{font-family:var(--f-read);font-size:20px;font-weight:600;margin:0;flex:1}
+.btn{font:inherit;font-weight:500;border:1px solid var(--line);background:var(--surface);color:var(--fg);border-radius:8px;padding:7px 13px;cursor:pointer;white-space:nowrap}
+.btn.primary{background:var(--accent);color:var(--bg);border-color:var(--accent)}
+.btn.ghost{background:none;border-color:transparent;color:var(--muted)}
+.btn.on{background:var(--accent-soft);color:var(--accent);border-color:var(--accent)}
+.btn:hover{border-color:var(--accent)}
+.btn:disabled{opacity:.5;cursor:default}
+.icon{width:36px;height:36px;padding:0;border-radius:50%;display:inline-grid;place-items:center}
+.icon svg{width:15px;height:15px;fill:currentColor}
+button:focus-visible,select:focus-visible,input:focus-visible,textarea:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+.list{overflow:auto;flex:1;padding-block:8px 32px;padding-inline:12px;display:flex;flex-direction:column;gap:4px}
+.item{display:block;width:100%;text-align:left;font:inherit;background:none;border:1px solid transparent;border-radius:8px;padding:10px 12px;cursor:pointer;color:var(--fg)}
+.item:hover{background:var(--accent-soft)}
+.item.cur{background:var(--surface);border-color:var(--line)}
+.item b{display:block;font-family:var(--f-read);font-weight:600;font-size:16px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.item span{font-size:12px;color:var(--muted)}
+.empty{color:var(--muted);padding:24px 12px;font-size:14px}
+details.folder{margin:2px 0}
+details.folder > summary{cursor:pointer;font-weight:500;padding:6px 8px;border-radius:6px;color:var(--muted);list-style:none;display:flex;align-items:center;gap:6px}
+details.folder > summary::before{content:"▸";font-size:11px;transition:transform .15s}
+details.folder[open] > summary::before{transform:rotate(90deg)}
+details.folder > summary:hover{background:var(--accent-soft)}
+details.folder > summary small{font-weight:400;font-size:11px}
+details.folder > .item, details.folder > details{margin-left:14px}
+a.btn{text-decoration:none;display:inline-block}
+.side-foot{padding-block:10px;padding-inline:16px;border-top:1px solid var(--line);font-size:12px;color:var(--muted)}
+
+.body{overflow:auto;flex:1;min-height:0}
+.reader{padding-block:20px 80px;padding-inline:20px;max-width:720px;margin:0 auto;font-family:var(--f-read);font-size:18px;line-height:1.75}
+.reader h1,.reader h2,.reader h3{font-weight:600;line-height:1.25;text-wrap:balance;margin:1.2em 0 .5em}
+.reader h1{font-size:28px;margin-top:.2em}.reader h2{font-size:22px}.reader h3{font-size:19px}
+.reader p{margin:0 0 .9em}
+.reader table{border-collapse:collapse;width:100%;font-size:17px;margin:0 0 1.2em;display:block;overflow-x:auto}
+.reader th,.reader td{border-bottom:1px solid var(--line);padding:6px 10px;text-align:left;vertical-align:top}
+.reader th{font-family:var(--f-ui);font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);font-weight:500}
+.reader code{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.9em;background:var(--accent-soft);padding:1px 4px;border-radius:4px}
+.reader blockquote{margin:0 0 1em;padding-left:14px;border-left:3px solid var(--line);color:var(--muted)}
+.reader ul,.reader ol{padding-left:1.4em}
+.reader hr{border:0;border-top:1px solid var(--line);margin:1.5em 0}
+.say{cursor:pointer;border-radius:3px;text-decoration:underline;text-decoration-color:var(--line);text-decoration-thickness:1.5px;text-underline-offset:3px;transition:background .12s}
+.say:hover{background:var(--accent-soft);text-decoration-color:var(--accent)}
+.say.hot{background:var(--hot);text-decoration-color:var(--hot-line)}
+.blk{position:relative}
+.blk > .bp{position:absolute;left:-30px;top:.35em;width:22px;height:22px;border:0;background:none;color:var(--muted);cursor:pointer;opacity:0;padding:0;display:grid;place-items:center;border-radius:50%}
+.blk > .bp svg{width:11px;height:11px;fill:currentColor}
+.blk:hover > .bp,.blk > .bp:focus-visible{opacity:1}
+@media (max-width:759px){.blk > .bp{opacity:.45;left:-24px}.reader{padding-inline:28px 16px}}
+
+.editor{display:flex;flex-direction:column;flex:1;min-height:0}
+textarea{flex:1;width:100%;box-sizing:border-box;resize:none;border:0;background:var(--bg);color:var(--fg);font:16px/1.6 ui-monospace,Menlo,Consolas,"PingFang SC",monospace;padding:20px;min-height:0}
+textarea:focus{outline:none}
+
+.dock{position:fixed;left:50%;transform:translateX(-50%);bottom:0;padding-bottom:calc(14px + env(safe-area-inset-bottom,0px));display:flex;gap:8px;z-index:3}
+.dock .btn{box-shadow:0 4px 18px rgba(0,0,0,.16)}
+.dock[hidden]{display:none}
+
+.sheet{position:fixed;inset:0;background:rgba(0,0,0,.35);display:grid;place-items:end center;z-index:5}
+.sheet[hidden]{display:none}
+.sheet > div{background:var(--surface);color:var(--fg);width:100%;max-width:520px;border-radius:14px 14px 0 0;padding:18px 18px calc(18px + env(safe-area-inset-bottom,0px));display:flex;flex-direction:column;gap:12px;max-height:85vh;overflow:auto;box-sizing:border-box}
+.field{display:flex;flex-direction:column;gap:4px;font-size:13px;color:var(--muted)}
+select,input{font:inherit;color:var(--fg);background:var(--bg);border:1px solid var(--line);border-radius:6px;padding:7px 9px;width:100%;box-sizing:border-box}
+.hint{font-size:13px;color:var(--muted)}
+.row{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.row > .field{flex:1 1 180px}
+.toast{position:fixed;left:50%;transform:translateX(-50%);top:calc(12px + env(safe-area-inset-top,0px));background:var(--fg);color:var(--bg);padding:8px 14px;border-radius:8px;font-size:14px;z-index:9;opacity:0;transition:opacity .2s;pointer-events:none}
+.toast.show{opacity:1}
+</style>
+
+<div class="app">
+  <section class="pane" id="p-list">
+    <div class="top">
+      <h1>Spreek</h1>
+      <button class="btn ghost" id="settings-open">设置</button>
+      <button class="btn primary" id="new">＋ 草稿</button>
+    </div>
+    <div class="list" id="list"></div>
+    <div class="hint" id="list-msg" style="padding:0 16px"></div>
+    <div class="side-foot">笔记来自 GitHub 仓库 notes/ 文件夹，推送后自动更新。</div>
+  </section>
+
+  <section class="pane" id="p-note" hidden>
+    <div class="top">
+      <button class="btn ghost" id="back">← 列表</button>
+      <span style="flex:1"></span>
+      <button class="btn" id="read-all" title="从头朗读整篇">▶ 全文</button>
+      <a class="btn" id="gh" href="#" target="_blank" rel="noopener">在 GitHub 上编辑</a>
+      <button class="btn" id="mode">编辑</button>
+      <button class="btn ghost" id="del">删除</button>
+    </div>
+    <div class="body" id="body">
+      <div class="reader" id="reader"></div>
+      <div class="editor" id="editor" hidden><textarea id="ta" placeholder="在这里写笔记。荷兰语、英语写在哪里都行，中文会自动跳过不读。支持 Markdown：# 标题、| 表格 |、- 列表。"></textarea></div>
+    </div>
+  </section>
+</div>
+
+<div class="dock" id="dock" hidden>
+  <button class="btn primary" id="dock-sel">▶ 读选中的</button>
+  <button class="btn" id="dock-stop">■ 停</button>
+</div>
+
+<div class="sheet" id="sheet" hidden>
+  <div>
+    <div class="row" style="justify-content:space-between"><b>设置</b><button class="btn ghost" id="settings-close">关闭</button></div>
+    <label class="field">语速<select id="rate"><option value="0.7">慢 0.7×</option><option value="0.85">较慢 0.85×</option><option value="1">正常 1×</option><option value="1.15">快 1.15×</option></select></label>
+    <label class="field">无法判断时当作<select id="deflang"><option value="nl">荷兰语</option><option value="en">英语</option><option value="de">德语</option><option value="fr">法语</option><option value="es">西班牙语</option></select></label>
+    <div class="hint">单个短词有时荷兰语和英语写法一样，这时按上面的语言读。</div>
+    <div id="voice-fields"></div>
+    <div class="hint" id="voice-hint"></div>
+  </div>
+</div>
+<div class="toast" id="toast"></div>
+
+<script>
+const $ = id => document.getElementById(id);
+const ls = { get(k,d){try{const v=localStorage.getItem("spreek_"+k);return v===null?d:JSON.parse(v)}catch(e){return d}},
+             set(k,v){try{localStorage.setItem("spreek_"+k,JSON.stringify(v))}catch(e){}} };
+const toast = m => { const t=$("toast"); t.textContent=m; t.classList.add("show"); clearTimeout(t._t); t._t=setTimeout(()=>t.classList.remove("show"),1800); };
+const playSvg = '<svg viewBox="0 0 16 16"><path d="M3 1.5v13l11-6.5z"/></svg>';
+
+/* ================= 笔记来源 ================= */
+// 仓库笔记：notes/index.json（由 scripts/build-index.js 生成）。本地草稿：只存在这个浏览器里。
+const REPO = "https://github.com/Annie-Zhou1997/Spreek";
+let repoNotes = [];        // [{path,title,folder,body?}]
+let drafts = ls.get("notes", []);
+let curId = ls.get("cur", null);   // "r:<path>" 或 "d:<id>"
+const isDraft = id => id && id.startsWith("d:");
+const findNote = id => isDraft(id) ? drafts.find(x=>"d:"+x.id===id) : repoNotes.find(x=>"r:"+x.path===id);
+const titleOf = n => { if(n.title) return n.title; const m=n.body.match(/^\s*#+\s*(.+)$/m) || n.body.match(/^\s*(\S.*)$/m); return (m?m[1]:"").replace(/[*_`#]/g,"").trim() || "（空草稿）"; };
+const save = () => ls.set("notes", drafts);
+const fmtDate = t => { const d=new Date(t); return `${d.getMonth()+1}/${d.getDate()} ${String(d.getHours()).padStart(2,"0")}:${String(d.getMinutes()).padStart(2,"0")}`; };
+async function loadIndex(){
+  try{
+    const r=await fetch("notes/index.json",{cache:"no-cache"}); if(!r.ok) throw 0;
+    repoNotes=(await r.json()).notes;
+  }catch(e){ repoNotes=[]; $("list-msg").textContent="没有读到 notes/index.json。本地打开时先运行 node scripts/build-index.js。"; }
+  renderList();
+  if (innerWidth>=760){ $("p-note").hidden=false; const first=curId&&findNote(curId)?curId:(repoNotes[0]?"r:"+repoNotes[0].path:null); if(first) open(first); }
+}
+async function bodyOf(n){
+  if (n.body!==undefined) return n.body;
+  const r=await fetch("notes/"+n.path.split("/").map(encodeURIComponent).join("/"),{cache:"no-cache"});
+  n.body = r.ok ? await r.text() : "# 读取失败\n\n"+n.path;
+  return n.body;
+}
+
+/* ================= 语言判断 ================= */
+const NL = new Set("de het een en van ik je jij u wij we zij ze hij niet is zijn dat die dit op te met voor naar ook maar om bij als dan nog wel heb hebt heeft hebben kan kunt kunnen moet moeten wil wilt willen wordt worden ben bent was waren er hier daar wat wie hoe waar wanneer waarom veel meer geen alle mensen graag dag goed uur jaar week maand morgen vandaag gisteren mij me mijn jouw uw ons onze hun haar zich zo nu al over uit aan door tot bij per want omdat of dus toch even weer heel erg".split(" "));
+const EN = new Set("the and is are you to of in that it for with on this have be not as at by from they we or an will can your was were has had do does did but if so my me our their them he she his her what which who when where why how all more some any there here just about into than then now one two three new would could should may might".split(" "));
+function detect(text, fallback){
+  const words = text.toLowerCase().match(/[a-zà-ÿœæß']+/g) || [];
+  if (!words.length) return fallback;
+  if (/[äöüß]/.test(text) && !/ij/.test(text)) return "de";
+  if (/[çàèùœ]|[éê].*\b(le|la|les|des|est|et|une)\b/.test(text)) return "fr";
+  if (/[ñ¿¡]|\b(el|los|las|es|una|por|que)\b.*\b(el|los|las|es|una|por|que)\b/.test(text)) return "es";
+  let nl=0, en=0;
+  for (const w of words){
+    if (NL.has(w)) nl+=2; if (EN.has(w)) en+=2;
+    if (/ij|oe|ui|aa|ee|oo|sch|lijk$|heid$|tje$|en$/.test(w)) nl+=1;
+    if (/th|wh|ing$|tion$|ed$|ly$|ght/.test(w)) en+=1;
+  }
+  if (nl===en) return fallback;
+  return nl>en ? "nl" : "en";
+}
+function dominantLang(){
+  const t = [...$("reader").querySelectorAll(".say")].map(s=>s.textContent).join(" ");
+  const d = detect(t, null); return d || $("deflang").value;
+}
+
+/* ================= 朗读 ================= */
+const synth = window.speechSynthesis;
+let voices=[];
+const LANGS = {nl:"荷兰语", en:"英语", de:"德语", fr:"法语", es:"西班牙语"};
+function rank(v){ const n=v.name.toLowerCase(); let r=0; if(/natural|online|neural/.test(n)) r+=10; if(/google/.test(n)) r+=8; if(/premium|enhanced|verbeterd/.test(n)) r+=5; return r; }
+function loadVoices(){
+  if (!synth) return;
+  voices = synth.getVoices().slice().sort((a,b)=>rank(b)-rank(a));
+  const box=$("voice-fields"); box.innerHTML="";
+  for (const [code,name] of Object.entries(LANGS)){
+    const vs = voices.filter(v=>v.lang.toLowerCase().replace("_","-").startsWith(code));
+    if (!vs.length && code!=="nl" && code!=="en") continue;
+    const sel=document.createElement("select"); sel.id="v-"+code;
+    sel.innerHTML = vs.length ? vs.map(v=>`<option value="${v.name.replace(/"/g,"&quot;")}">${v.name.replace(/^Microsoft /,"")} (${v.lang})</option>`).join("") : `<option value="">（没有${name}声音）</option>`;
+    const saved=ls.get("voice-"+code,null); if (saved && vs.some(v=>v.name===saved)) sel.value=saved;
+    sel.onchange=()=>{ ls.set("voice-"+code, sel.value); speakNow(code==="nl"?"Hallo, ik spreek Nederlands.":code==="en"?"Hello, I speak English.":"Hallo", code); };
+    const lab=document.createElement("label"); lab.className="field"; lab.textContent=name+"声音"; lab.appendChild(sel); box.appendChild(lab);
+  }
+  $("voice-hint").textContent = voices.some(v=>/^nl/i.test(v.lang)) ? "" : "没找到荷兰语声音。电脑用 Chrome 或 Edge；iPhone 在「设置 → 辅助功能 → 朗读内容 → 声音」里下载荷兰语。";
+}
+if (synth){ loadVoices(); synth.onvoiceschanged=loadVoices; setTimeout(loadVoices,800); }
+function voiceFor(code){
+  const sel=$("v-"+code); const name=sel?sel.value:null;
+  return voices.find(v=>v.name===name) || voices.find(v=>v.lang.toLowerCase().replace("_","-").startsWith(code)) || null;
+}
+function stripCJK(s){ return s.replace(/[　-〿぀-ヿ㐀-䶿一-鿿豈-﫿＀-￯]+/g," ").replace(/\s+/g," ").trim(); }
+function utter(text, lang){
+  const u=new SpeechSynthesisUtterance(text);
+  const v=voiceFor(lang); if (v){u.voice=v;u.lang=v.lang;} else u.lang=lang;
+  u.rate=parseFloat($("rate").value); return u;
+}
+let runId=0, hotEl=null;
+function setHot(els){ document.querySelectorAll(".say.hot").forEach(e=>e.classList.remove("hot")); (els||[]).forEach(e=>e.classList.add("hot")); }
+function speakNow(text, lang){
+  if (!synth) return; synth.cancel(); runId++;
+  const t=stripCJK(text); if(!t) return;
+  synth.speak(utter(t, lang || detect(t, $("deflang").value)));
+}
+function speakAsync(text, lang, my){
+  return new Promise(res=>{
+    const t=stripCJK(text); if(!synth||!t) return res();
+    const u=utter(t, lang); let done=false;
+    const fin=()=>{ if(done) return; done=true; clearTimeout(tm); res(); };
+    const tm=setTimeout(fin, 3000 + t.length*180/u.rate);
+    u.onend=fin; u.onerror=fin; synth.speak(u);
+  });
+}
+function stopAll(){ runId++; playing=false; synth&&synth.cancel(); setHot(null); $("dock").hidden = !hasSelection(); }
+
+/* ================= 渲染 + 切块 ================= */
+const CJK_RUN = /[　-〿぀-ヿ㐀-䶿一-鿿豈-﫿＀-￯][　-〿぀-ヿ㐀-䶿一-鿿豈-﫿＀-￯\s]*/g;
+const SENT_END = /([.!?…]+["'”’)]*)(\s+)(?=["'“‘(]?[A-ZÀ-Ý])/g;
+let chunks=[];   // [{id, text, lang, els:[]}]
+function render(){
+  const n=findNote(curId); if(!n||n.body===undefined) return;
+  marked.setOptions({gfm:true, breaks:true});
+  $("reader").innerHTML = marked.parse(n.body);
+  chunks=[]; let cid=0;
+  const blocks = $("reader").querySelectorAll("p, li, td, th, h1, h2, h3, h4, blockquote, dd, dt");
+  blocks.forEach(blk=>{
+    if (blk.querySelector("p, li, td, th, blockquote") && blk.tagName!=="TD") return;   // 只处理最内层块
+    const walker=document.createTreeWalker(blk, NodeFilter.SHOW_TEXT|NodeFilter.SHOW_ELEMENT);
+    const textNodes=[]; let tn; while((tn=walker.nextNode())) if(tn.nodeType===3||tn.tagName==="BR") textNodes.push(tn);
+    let open=null;   // 当前块
+    const startChunk=()=>{ open={id:cid++, text:"", els:[]}; chunks.push(open); return open; };
+    for (const node of textNodes){
+      if (node.tagName==="BR"){ open=null; continue; }   // 换行处断开
+      const raw=node.nodeValue; if(!raw.trim()) { if(open) open.text+=" "; continue; }
+      // 先按中文切，再按句号切
+      const parts=[]; let last=0, m;
+      const re=new RegExp(CJK_RUN.source,"g");
+      while((m=re.exec(raw))){ if(m.index>last) parts.push({t:raw.slice(last,m.index),latin:true}); parts.push({t:m[0],latin:false}); last=m.index+m[0].length; }
+      if (last<raw.length) parts.push({t:raw.slice(last),latin:true});
+      const frag=document.createDocumentFragment();
+      for (const p of parts){
+        if (!p.latin || !/[A-Za-zÀ-ÿ]{2}/.test(p.t)){ frag.appendChild(document.createTextNode(p.t)); open=null; continue; }
+        // 句子边界
+        const segs=[]; let l=0, mm; const se=new RegExp(SENT_END.source,"g");
+        while((mm=se.exec(p.t))){ const end=mm.index+mm[1].length; segs.push({t:p.t.slice(l,end),brk:true}); segs.push({t:mm[2],ws:true}); l=end+mm[2].length; }
+        if (l<p.t.length) segs.push({t:p.t.slice(l)});
+        for (const s of segs){
+          if (s.ws){ frag.appendChild(document.createTextNode(s.t)); continue; }
+          const c = open || startChunk();
+          const span=document.createElement("span"); span.className="say"; span.textContent=s.t; span.dataset.c=c.id;
+          c.els.push(span); c.text+=s.t; frag.appendChild(span);
+          if (s.brk) open=null;
+        }
+      }
+      node.parentNode.replaceChild(frag,node);
+    }
+    if (blk.tagName!=="TD" && blk.tagName!=="TH" && blk.querySelector(".say")){
+      blk.classList.add("blk");
+      const b=document.createElement("button"); b.className="bp"; b.innerHTML=playSvg; b.title="读这一段"; b.dataset.blk="1"; blk.prepend(b);
+    }
+  });
+  const dom=dominantLang();
+  chunks.forEach(c=>{ c.text=c.text.replace(/\s+/g," ").trim(); c.lang=detect(c.text, dom); });
+}
+$("reader").addEventListener("click", async e=>{
+  const bp=e.target.closest("[data-blk]");
+  if (bp){ e.preventDefault(); const ids=[...new Set([...bp.parentElement.querySelectorAll(".say")].map(s=>+s.dataset.c))]; return playChunks(ids.map(i=>chunks[i])); }
+  const s=e.target.closest(".say"); if(!s) return;
+  if (hasSelection()) return;   // 拖选时不触发
+  playChunks([chunks[+s.dataset.c]]);
+});
+async function playChunks(list){
+  stopAll(); const my=++runId; playing=true;
+  $("dock").hidden=false;
+  for (const c of list){ if(my!==runId) return; setHot(c.els); c.els[0]?.scrollIntoView({block:"nearest"}); await speakAsync(c.text, c.lang, my); if(my!==runId) return; await new Promise(r=>setTimeout(r,350)); }
+  if (my===runId){ playing=false; setHot(null); $("dock").hidden=!hasSelection(); }
+}
+$("read-all").onclick=()=>{ if($("editor").hidden===false) setMode("read"); playChunks(chunks); };
+$("dock-stop").onclick=stopAll;
+
+/* 选中朗读 */
+function hasSelection(){ const s=window.getSelection(); if(!s||s.isCollapsed) return false; return $("reader").contains(s.anchorNode); }
+function selText(){ return stripCJK(window.getSelection().toString()); }
+let playing=false;
+document.addEventListener("selectionchange", ()=>{ if ($("p-note").hidden && innerWidth<760) return; const has=hasSelection()&&selText(); $("dock").hidden = !(has || playing); });
+$("dock-sel").onclick=()=>{ const t=selText(); if(t) speakNow(t); };
+$("reader").addEventListener("mouseup", ()=>{ const t=selText(); if (t && !isTouch) speakNow(t); });
+let isTouch=false; addEventListener("touchstart",()=>isTouch=true,{passive:true});
+
+/* ================= 列表 / 编辑 ================= */
+function renderList(){
+  const open_=ls.get("open",{});
+  // 文件夹树
+  const tree={}; for(const n of repoNotes){ let t=tree; for(const f of n.folder){ t[f]=t[f]||{}; t=t[f]; } (t.__notes=t.__notes||[]).push(n); }
+  const item=(id,title,sub)=>`<button class="item ${id===curId?"cur":""}" data-id="${esc(id)}"><b>${esc(title)}</b>${sub?`<span>${esc(sub)}</span>`:""}</button>`;
+  const walk=(t,path)=>Object.keys(t).filter(k=>k!=="__notes").map(k=>{
+    const p=path+"/"+k, op=open_[p]!==false;
+    return `<details class="folder" ${op?"open":""} data-p="${esc(p)}"><summary>${esc(k)}</summary>${walk(t[k],p)}${(t[k].__notes||[]).map(n=>item("r:"+n.path,n.title)).join("")}</details>`;
+  }).join("");
+  let html=walk(tree,"")+(tree.__notes||[]).map(n=>item("r:"+n.path,n.title)).join("");
+  if (!repoNotes.length) html=`<div class="empty">仓库里还没有笔记。</div>`;
+  const ds=drafts.slice().sort((a,b)=>b.updated-a.updated);
+  html+=`<details class="folder" ${open_["/drafts"]!==false?"open":""} data-p="/drafts"><summary>本地草稿 <small>（只在这台设备上）</small></summary>${ds.map(n=>item("d:"+n.id,titleOf(n),fmtDate(n.updated))).join("")||`<div class="empty">点「＋ 草稿」随手记。</div>`}</details>`;
+  $("list").innerHTML=html;
+  $("list").querySelectorAll("details.folder").forEach(d=>d.addEventListener("toggle",()=>{ const o=ls.get("open",{}); o[d.dataset.p]=d.open; ls.set("open",o); }));
+}
+const esc = s => String(s).replace(/[&<>"]/g, c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+$("list").onclick=e=>{ const b=e.target.closest("[data-id]"); if(b) open(b.dataset.id); };
+async function open(id){
+  stopAll(); curId=id; ls.set("cur",id);
+  const n=findNote(id); if(!n) return;
+  const draft=isDraft(id);
+  $("mode").hidden=!draft; $("del").hidden=!draft;
+  $("gh").hidden=draft; if(!draft) $("gh").href=REPO+"/edit/main/notes/"+n.path.split("/").map(encodeURIComponent).join("/");
+  if (innerWidth<760){ $("p-list").hidden=true; $("p-note").hidden=false; }
+  renderList();
+  if (!draft){ $("reader").innerHTML='<p class="hint">读取中…</p>'; await bodyOf(n); if(curId!==id) return; }
+  $("ta").value=n.body;
+  setMode(draft && !n.body.trim() ? "edit" : "read");
+  $("body").scrollTop=0;
+}
+function setMode(m){
+  const edit=m==="edit";
+  $("editor").hidden=!edit; $("reader").hidden=edit; $("mode").textContent=edit?"阅读":"编辑";
+  if (edit){ stopAll(); $("ta").focus(); } else { commit(); render(); }
+}
+$("mode").onclick=()=>setMode($("editor").hidden?"edit":"read");
+let saveT;
+function commit(){ if(!isDraft(curId)) return; const n=findNote(curId); if(!n) return; if(n.body!==$("ta").value){ n.body=$("ta").value; n.updated=Date.now(); save(); renderList(); } }
+$("ta").addEventListener("input", ()=>{ clearTimeout(saveT); saveT=setTimeout(commit,400); });
+$("new").onclick=()=>{ const n={id:"n"+Date.now(), body:"", updated:Date.now()}; drafts.push(n); save(); open("d:"+n.id); };
+$("back").onclick=()=>{ commit(); stopAll(); $("p-note").hidden=true; $("p-list").hidden=false; };
+let delArm=false;
+$("del").onclick=()=>{
+  if (!delArm){ delArm=true; $("del").textContent="确认删除？"; setTimeout(()=>{delArm=false;$("del").textContent="删除";},3000); return; }
+  delArm=false; $("del").textContent="删除";
+  drafts=drafts.filter(x=>"d:"+x.id!==curId); save(); curId=null; ls.set("cur",null);
+  $("reader").innerHTML=""; $("ta").value=""; renderList();
+  if (innerWidth<760){ $("p-note").hidden=true; $("p-list").hidden=false; }
+  toast("已删除");
+};
+
+/* 设置 */
+$("settings-open").onclick=()=>$("sheet").hidden=false;
+$("settings-close").onclick=()=>$("sheet").hidden=true;
+$("sheet").onclick=e=>{ if(e.target===$("sheet")) $("sheet").hidden=true; };
+$("rate").value=ls.get("rate","0.85"); $("rate").onchange=()=>ls.set("rate",$("rate").value);
+$("deflang").value=ls.get("deflang","nl"); $("deflang").onchange=()=>{ ls.set("deflang",$("deflang").value); if(!$("reader").hidden) render(); };
+
+document.addEventListener("keydown", e=>{ if (e.key==="Escape") stopAll(); });
+addEventListener("resize", ()=>{ if (innerWidth>=760){ $("p-list").hidden=false; $("p-note").hidden=false; } else if (!curId){ $("p-note").hidden=true; } });
+
+loadIndex();
+</script>
+</body>
+</html>
