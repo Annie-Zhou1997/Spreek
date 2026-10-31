@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-31T22:09:20.890Z",
+ "generated": "2026-10-31T22:36:00.580Z",
  "notes": [
   {
    "path": "Lezen A2/Woorden uit de leesteksten.md",
@@ -39,6 +39,16 @@
    ],
    "size": 2376,
    "mtime": 1793484526807.396
+  },
+  {
+   "path": "Luisteren A2/Oefening 1/04 De straat is afgesloten.md",
+   "title": "De straat is afgesloten：Amina 家的街封路了",
+   "folder": [
+    "Luisteren A2",
+    "Oefening 1"
+   ],
+   "size": 4163,
+   "mtime": 1793486150029.3813
   }
  ]
 }
