@@ -14,14 +14,14 @@ Ook is het fijn als u ervaring heeft met het werk, maar dat hoeft niet.
 U kunt bij ons ook een avondopleiding volgen tot leidinggevende. Deze opleiding duurt vier maanden.
 U leert bijvoorbeeld een werkplanning maken of werkroosters bijhouden.
 Tijdens uw opleiding loopt u ook stage. U oefent dan wat u heeft geleerd.
-Deze stage duurt twee maanden, dus de opleiding duurt in totaal zes maanden.
+Deze stage duurt twee maanden, dus de opleiding duurt in totaal vier maanden.
 Na de opleiding kunt u aan het werk als leidinggevende.
 Heeft u interesse in deze opleiding? Geeft u dat dan aan bij uw kennismakingsgesprek.
 Tot ziens bij het gesprek.
 
 ## 译文
 
-Yasir 想通过劳务中介 Kracht 找工作，已经登记过了，他在网上看中介的介绍视频。「欢迎来到 Kracht。您已经在网上登记，很快会有一次见面谈话，日期和时间会通过电子邮件发给您。在我们这里可以做清洁、安保和生产。清洁和生产要求荷兰语 A2，安保要求 B1。有相关经验更好，但不是必须的。您也可以在我们这里上夜校，培训成主管，培训四个月，比如学做工作计划、维护排班表。培训期间还要实习，练习学到的东西，实习两个月，所以培训总共六个月。培训后可以当主管。对这个培训有兴趣的话，请在见面谈话时说明。谈话时见。」
+Yasir 想通过劳务中介 Kracht 找工作，已经登记过了，他在网上看中介的介绍视频。「欢迎来到 Kracht。您已经在网上登记，很快会有一次见面谈话，日期和时间会通过电子邮件发给您。在我们这里可以做清洁、安保和生产。清洁和生产要求荷兰语 A2，安保要求 B1。有相关经验更好，但不是必须的。您也可以在我们这里上夜校，培训成主管，培训四个月，比如学做工作计划、维护排班表。培训期间还要实习，练习学到的东西，实习两个月，所以培训总共四个月。培训后可以当主管。对这个培训有兴趣的话，请在见面谈话时说明。谈话时见。」
 
 ## 考题
 
@@ -40,7 +40,7 @@ Hoe lang duurt de opleiding tot leidinggevende?
 - Vier maanden.
 - Een half jaar.
 
-答案：Via een e-mail；Nederlands spreken op A2-niveau（经验 hoeft niet）；Een half jaar（四个月课程加两个月实习，in totaal zes maanden。听写稿里写的「4 maanden」是错的，原视频说 zes）。
+答案：Via een e-mail；Nederlands spreken op A2-niveau（经验 hoeft niet）；Vier maanden（两个月实习包含在四个月培训里面，in totaal vier maanden）。
 
 ## 生词
 
@@ -61,7 +61,7 @@ Hoe lang duurt de opleiding tot leidinggevende?
 | het werkrooster | 排班表 | Werkroosters bijhouden.<br>维护排班表。 | Volgens het werkrooster werk ik zaterdag.<br>按排班表我周六上班。 |
 | bijhouden | 维护，跟进（可分动词） | Werkroosters bijhouden.<br>维护排班表。 | Ik houd mijn uitgaven bij.<br>我记录我的开支。 |
 | stage lopen | 实习 | Tijdens uw opleiding loopt u ook stage.<br>培训期间您也要实习。 | Hij loopt stage bij een bank.<br>他在银行实习。 |
-| in totaal | 总共 | De opleiding duurt in totaal zes maanden.<br>培训总共六个月。 | Dat is in totaal twintig euro.<br>总共二十欧元。 |
+| in totaal | 总共 | De opleiding duurt in totaal vier maanden.<br>培训总共四个月。 | Dat is in totaal twintig euro.<br>总共二十欧元。 |
 | aan het werk kunnen | 可以开始工作 | Na de opleiding kunt u aan het werk.<br>培训后您可以开始工作。 | Vanaf maandag kan ik aan het werk.<br>从周一起我可以上班。 |
 | interesse hebben in | 对……有兴趣 | Heeft u interesse in deze opleiding?<br>您对这个培训有兴趣吗？ | Ik heb interesse in deze baan.<br>我对这份工作有兴趣。 |
 | aangeven | 说明，表示（可分动词） | Geeft u dat dan aan bij uw gesprek.<br>请在面谈时说明。 | Geef aan wanneer je kunt.<br>告诉我你什么时候可以。 |
@@ -84,10 +84,10 @@ Hoe lang duurt de opleiding tot leidinggevende?
 - Het is fijn als u ervaring heeft, maar dat hoeft niet.
 - Het is handig als je een auto hebt, maar dat hoeft niet.
 
-### 两个数字相加才是答案
+### 听清 in totaal 后面的数字
 
-- De opleiding duurt vier maanden. De stage duurt twee maanden. In totaal zes maanden.
-- 听到 in totaal 的时候，前面的数字都不是最终答案。
+- De opleiding duurt vier maanden. De stage duurt twee maanden. In totaal vier maanden.
+- 实习是培训的一部分，所以不是相加。听到 in totaal 时，以它后面的数字为准。
 
 ### Geeft u dat dan aan：礼貌祈使句
 
